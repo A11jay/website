@@ -41,11 +41,9 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* Subheading - Removed Redundancy */}
-                <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl font-light leading-relaxed">
-                    7+ years of experience building <span className="text-foreground font-medium">Enterprise AI Agents</span>, <span className="text-foreground font-medium">RAG Systems</span>, and <span className="text-foreground font-medium">HR-Tech Platforms</span>.
-                    <br className="hidden sm:block" />
-                    Bridging the gap between <i>Business Strategy</i> and <i>Vibe Coding</i>.
+                {/* Subheading */}
+                <p className="mx-auto max-w-[800px] text-lg text-muted-foreground md:text-xl font-light leading-relaxed">
+                    7+ years of experience leading the end-to-end product lifecycle for global SaaS and assessment platforms. I specialize in bridging the gap between business strategy and cutting-edge technology, with a proven track record of shipping AI-driven capabilities that drive measurable growth.
                 </p>
 
                 {/* CTA Buttons */}
