@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base - Dark SaaS Theme */
+  --background: #09090b; /* Zinc 950 */
+  --foreground: #fafafa; /* Zinc 50 */
+  
+  /* Primary - Electric Blue */
+  --primary: #3b82f6; /* Blue 500 */
+  --primary-foreground: #ffffff;
+  
+  /* Secondary - Neon Purple */
+  --secondary: #8b5cf6; /* Violet 500 */
+  --secondary-foreground: #ffffff;
+  
+  /* Accents */
+  --accent: #06b6d4; /* Cyan 500 */
+  --accent-glow: rgba(6, 182, 212, 0.5);
+
+  /* Surface/Cards */
+  --card: #18181b; /* Zinc 900 */
+  --card-foreground: #fafafa;
+  
+  --border: #27272a; /* Zinc 800 */
+  --input: #27272a;
+  
+  --radius: 0.5rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  
+  --color-accent: var(--accent);
+  
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  
+  --color-border: var(--border);
+  --color-input: var(--input);
+  
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  antialiased: true;
+}
+
+/* Custom Scrollbar for that SaaS feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
 }
