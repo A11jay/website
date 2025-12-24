@@ -65,7 +65,7 @@ const QA_DATA = [
 export default function Chatbot() {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState<Message[]>([
-        { id: '1', role: 'assistant', content: "Hello, I'm the Ajay AI Career Assistant. Ask me about my experience with RAG, AI Agents, or my impact on ARR." }
+        { id: '1', role: 'assistant', content: "Hello, I'm Ajay's AI assistant. Ask me anything about Ajay's experience and expertise." }
     ]);
     const [inputValue, setInputValue] = useState('');
     const messagesEndRef = useRef<HTMLDivElement>(null);
