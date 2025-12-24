@@ -7,6 +7,7 @@ const experiences = [
     {
         role: 'VP - Business Operations (Product)',
         company: 'ExamRoom.AI',
+        location: 'Bangalore, KA',
         period: 'Jun 2021 - Present',
         description: 'Driving product vision and AI initiatives for global remote proctoring solutions.',
         details: [
@@ -27,6 +28,7 @@ const experiences = [
     {
         role: 'HR Business Partner (Business Analyst)',
         company: 'TaskUs',
+        location: 'Indore, MP',
         period: 'Nov 2019 - Jun 2021',
         description: 'Translated business needs into system workflows (Workday/HRMS) and facilitated global tech adoption.',
         active: false,
@@ -60,6 +62,7 @@ export default function Timeline() {
                         <div className="md:flex md:gap-12 md:items-start">
                             <div className="md:w-32 md:text-right shrink-0 pt-1">
                                 <span className="text-sm font-mono text-muted-foreground">{exp.period}</span>
+                                <div className="text-xs text-muted-foreground/60 mt-1 hidden md:block">{exp.location}</div>
                             </div>
 
                             <div className="hidden md:flex absolute left-[-41px] top-1 h-5 w-5 items-center justify-center rounded-full border border-border bg-background ring-4 ring-background">
@@ -73,7 +76,10 @@ export default function Timeline() {
 
                             <div className="mt-2 md:mt-0 relative pb-1">
                                 <h3 className="text-xl font-semibold">{exp.role}</h3>
-                                <p className="text-lg text-primary">{exp.company}</p>
+                                <div className="flex items-center gap-2">
+                                    <p className="text-lg text-primary">{exp.company}</p>
+                                    <span className="text-sm text-muted-foreground md:hidden">• {exp.location}</span>
+                                </div>
                                 <p className="mt-2 text-muted-foreground">{exp.description}</p>
                                 {exp.details && (
                                     <ul className="mt-4 space-y-2 list-disc list-outside ml-4 text-muted-foreground/90 text-sm">
