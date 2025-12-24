@@ -43,7 +43,7 @@ export default function Hero() {
 
                 {/* Subheading */}
                 <p className="mx-auto max-w-[800px] text-lg text-muted-foreground md:text-xl font-light leading-relaxed">
-                    7+ years of experience leading the end-to-end product lifecycle for global SaaS and assessment platforms. I specialize in bridging the gap between business strategy and cutting-edge technology, with a proven track record of shipping AI-driven capabilities that drive measurable growth.
+                    7+ years of experience leading the end-to-end product lifecycle for global SaaS, HRTech and EdTech platforms. I specialize in bridging the gap between business strategy and cutting-edge technology, with a proven track record of shipping AI-driven capabilities that drive measurable growth.
                 </p>
 
                 {/* CTA Buttons */}
