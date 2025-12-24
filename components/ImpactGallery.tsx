@@ -1,52 +1,76 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Database, Bot, FileText, TrendingUp, Clock } from 'lucide-react';
+import { Database, Bot, FileText, TrendingUp, ShieldCheck, Sparkles } from 'lucide-react';
 
 const projects = [
     {
-        title: 'RFP Automation Agent',
-        description: 'AI Agent that decomposes RFPs and auto-populates responses using domain knowledge.',
-        tags: ['AI Agent', 'Automation', 'Sales'],
-        metric: '80% faster turnaround',
-        icon: FileText,
-        color: 'from-green-500 to-emerald-500',
-    },
-    {
         title: 'AI-Powered QA Agent',
-        description: 'Autonomous agent that allows LLMs to control browser flows for end-user testing.',
-        tags: ['AI Agent', 'QA', 'Playwright/Selenium'],
+        description: 'Designed an autonomous agent enabling natural-language-driven end-user testing. Shifts QA from reactive to proactive, allowing LLMs to control and validate browser flows.',
+        tags: ['AI Agent', 'Playwright', 'Test Automation'],
         metric: '50% reduction in QA effort',
         icon: Bot,
         color: 'from-purple-500 to-pink-500',
+        featured: true
     },
     {
         title: 'SQL RAG Layer',
-        description: 'Natural language interface for Apache Superset to democratize data access for non-tech users.',
-        tags: ['RAG', 'SQL', 'Apache Superset'],
-        metric: 'Data Democratization',
+        description: 'Built a RAG layer on Apache Superset allowing enterprise customers to query analytics via natural language. Democratized data access and improved decision speed.',
+        tags: ['RAG', 'Apache Superset', 'Data Engineering'],
+        metric: 'Democratized Data Access',
         icon: Database,
         color: 'from-blue-500 to-cyan-500',
+        featured: false
     },
     {
-        title: 'Enterprise Migration',
-        description: 'Led the migration from Zoho People Plus to an in-house HRMS, defining scope and integrations.',
-        tags: ['HR-Tech', 'Migration', 'Cost Savings'],
-        metric: 'Saved ₹35,00,000+ Annually',
+        title: 'RFP Automation Agent',
+        description: 'Launched an agent that decomposes RFPs into structured plans and auto-populates responses using organizational domain knowledge, accelerating deal cycles.',
+        tags: ['Sales AI', 'Automation', 'NLP'],
+        metric: '80% faster turnaround',
+        icon: FileText,
+        color: 'from-green-500 to-emerald-500',
+        featured: false
+    },
+    {
+        title: 'AI Exam Integrity Suite',
+        description: 'Delivered AI proctoring with behavioral risk scoring and anomaly detection. Strengthened exam integrity and reduced manual proctoring workload.',
+        tags: ['Computer Vision', 'Anomaly Detection', 'EdTech'],
+        metric: 'Enhanced Exam Integrity',
+        icon: ShieldCheck,
+        color: 'from-red-500 to-orange-500',
+        featured: false
+    },
+    {
+        title: 'AI Scoring & Generation',
+        description: 'Developed an AI engine for objective/subjective scoring and automatic item generation. Improved accuracy and reduced content creation time.',
+        tags: ['GenAI', 'Assessment', 'Scoring Engine'],
+        metric: 'Automated Content & Grading',
+        icon: Sparkles,
+        color: 'from-yellow-500 to-amber-500',
+        featured: false
+    },
+    {
+        title: 'Enterprise HRMS Migration',
+        description: 'Led the strategic migration from Zoho People Plus to an in-house HRMS, defining scope, integrations, and rollout execution for global operations.',
+        tags: ['Digital Transformation', 'HR-Tech', 'Migration'],
+        metric: 'Saved ₹35L+ Annually',
         icon: TrendingUp,
-        color: 'from-yellow-500 to-orange-500',
+        color: 'from-indigo-500 to-violet-500',
+        featured: false
     },
 ];
 
 export default function ImpactGallery() {
     return (
         <section id="impact" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">AI Impact Gallery</h2>
-                <p className="text-muted-foreground text-lg">Key initiatives driving business value through AI.</p>
+            <div className="text-center mb-16 space-y-4">
+                <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">AI Impact Gallery</h2>
+                <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                    Transforming products and operations through AI-driven innovation.
+                </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
                     <motion.div
                         key={project.title}
@@ -54,29 +78,41 @@ export default function ImpactGallery() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.1, duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="group relative overflow-hidden rounded-2xl border border-border bg-card hover:border-primary/50 transition-colors duration-300"
+                        className={`group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card p-8 hover:shadow-xl transition-all duration-300 hover:scale-[1.02] ${project.featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
                     >
-                        <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br ${project.color} transition-opacity duration-500`} />
+                        <div className={`absolute inset-0 opacity-0 group-hover:opacity-5 bg-gradient-to-br ${project.color} transition-opacity duration-500`} />
 
-                        <div className="p-6 space-y-4">
-                            <div className={`p-3 rounded-lg w-fit bg-gradient-to-br ${project.color} bg-opacity-10`}>
+                        {/* Header */}
+                        <div className="flex items-start justify-between mb-6">
+                            <div className={`p-3 rounded-2xl bg-gradient-to-br ${project.color} bg-opacity-10 shadow-inner`}>
                                 <project.icon className="h-6 w-6 text-white" />
                             </div>
+                            {project.featured && (
+                                <span className="text-xs font-semibold px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">
+                                    Flagship Initiative
+                                </span>
+                            )}
+                        </div>
 
-                            <h3 className="text-xl font-semibold">{project.title}</h3>
-                            <p className="text-muted-foreground">{project.description}</p>
+                        {/* Content */}
+                        <div className="space-y-4 mb-8">
+                            <h3 className="text-2xl font-bold tracking-tight">{project.title}</h3>
+                            <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+                        </div>
 
-                            <div className="pt-4 flex items-center gap-2 text-primary font-medium">
-                                <TrendingUp className="h-4 w-4" />
-                                <span>{project.metric}</span>
-                            </div>
-
-                            <div className="flex flex-wrap gap-2 pt-2">
+                        {/* Footer */}
+                        <div className="mt-auto space-y-6">
+                            <div className="flex flex-wrap gap-2">
                                 {project.tags.map((tag) => (
-                                    <span key={tag} className="text-xs px-2 py-1 rounded-full bg-secondary/10 text-secondary-foreground border border-secondary/20">
+                                    <span key={tag} className="text-xs font-medium px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground">
                                         {tag}
                                     </span>
                                 ))}
+                            </div>
+
+                            <div className="pt-4 border-t border-border flex items-center gap-3">
+                                <TrendingUp className="h-5 w-5 text-primary" />
+                                <span className="font-semibold text-primary">{project.metric}</span>
                             </div>
                         </div>
                     </motion.div>
