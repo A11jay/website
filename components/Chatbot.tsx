@@ -54,7 +54,7 @@ const QA_DATA = [
     },
     {
         keywords: ['contact', 'email', 'phone', 'reach', 'linkedin', 'location'],
-        answer: "You can reach me at ranaajaysingh@outlook.com or +919977799434. I am based in Bangalore, KA, India. Feel free to connect with me on LinkedIn!"
+        answer: "You can reach me at ranaajaysingh@outlook.com or +919977799434. I am based in Bangalore, KA, India. Connect with me on LinkedIn: https://www.linkedin.com/in/ajay-singh-rana-shrm-cp-562a07176/"
     },
     {
         keywords: ['hello', 'hi', 'hey', 'greetings'],
@@ -100,6 +100,21 @@ export default function Chatbot() {
         }, 600);
     };
 
+    // Helper to render text with clickable links
+    const renderContent = (content: string) => {
+        const urlRegex = /(https?:\/\/[^\s]+)/g;
+        const parts = content.split(urlRegex);
+        return parts.map((part, i) =>
+            urlRegex.test(part) ? (
+                <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 break-all text-inherit hover:text-inherit/80">
+                    {part}
+                </a>
+            ) : (
+                part
+            )
+        );
+    };
+
     return (
         <>
             <AnimatePresence>
@@ -133,7 +148,7 @@ export default function Chatbot() {
                                             : "bg-secondary/10 text-card-foreground"
                                     )}
                                 >
-                                    {msg.content}
+                                    {renderContent(msg.content)}
                                 </div>
                             ))}
                             <div ref={messagesEndRef} />
