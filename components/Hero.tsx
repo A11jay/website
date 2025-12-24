@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
@@ -15,26 +14,8 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="max-w-5xl space-y-8 relative z-10 flex flex-col items-center"
+                className="max-w-5xl space-y-8 relative z-10"
             >
-                {/* Profile Picture */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
-                    className="mb-8 relative w-32 h-32 md:w-40 md:h-40 group"
-                >
-                    <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-xl group-hover:blur-2xl transition-all duration-500" />
-                    <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-primary/20 group-hover:border-primary/50 transition-colors duration-500">
-                        <Image
-                            src="/profile.png"
-                            alt="Ajay Singh Rana"
-                            fill
-                            className="object-cover"
-                            priority
-                        />
-                    </div>
-                </motion.div>
                 {/* Badge */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
