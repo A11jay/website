@@ -63,7 +63,7 @@ export default function Hero() {
                     </a>
 
                     <a
-                        href="mailto:ranaajaysingh@outlook.com"
+                        href="#contact"
                         className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 font-medium text-foreground shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
                     >
                         Get in Touch
