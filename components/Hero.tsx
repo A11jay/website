@@ -17,7 +17,7 @@ export default function Hero() {
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl">
                     Ajay Singh Rana
                     <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mt-2">
-                        Building the Future of AI-Driven HR-Tech
+                        AI Product Manager
                     </span>
                 </h1>
 
