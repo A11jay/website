@@ -13,36 +13,52 @@ type Message = {
 
 const QA_DATA = [
     {
-        keywords: ['rag', 'superset', 'sql', 'retrieval', 'apache'],
-        answer: "I built an SQL RAG layer for Apache Superset, enabling natural language querying. This empowered non-technical users to access data insights instantly, bridging the gap between data and decision-making."
+        keywords: ['summary', 'about', 'bio', 'who are you', 'profile'],
+        answer: "I am a Product Manager with 7+ years of experience leading AI-driven HR-Tech, SaaS, and assessment platforms across global markets (India, USA, Brazil, Serbia, Nigeria). I specialize in end-to-end product lifecycle management, from discovery to enterprise rollouts, with a focus on delivering measurable business outcomes."
     },
     {
-        keywords: ['qa', 'test', 'quality', 'bug', 'testing'],
-        answer: "I led the design of an AI-powered QA Agent that reduced manual QA effort by 50% through automated test case generation and execution, significantly accelerating our release cycles."
+        keywords: ['examroom', 'current role', 'vp', 'operations'],
+        answer: "At ExamRoom.AI (Jun 2021 - Present), I serve as VP - Business Operations (Product). I own the product vision for HR-Tech, LMS, and Assessment products. Key achievements include contributing to $450k+ ARR, saving ₹35L+ annually via HRMS migration, and delivering major releases like Lockdown Browser and OMR Scan & Score."
     },
     {
-        keywords: ['rfp', 'proposal', 'automation', 'sales'],
-        answer: "I launched an AI-driven RFP Automation Agent that achieved an 80% faster turnaround time for proposal generation, allowing our sales team to respond to opportunities at speed."
+        keywords: ['taskus', 'hrbp', 'analyst', 'previous role'],
+        answer: "Previously, I was an HRBP (Business Analyst) at TaskUs (Nov 2019 - Jun 2021). I gathered HR process requirements, partnered with stakeholders for Workday/HRMS alignment, facilitated UAT cycles, and supported post-go-live enhancements for global operations."
     },
     {
-        keywords: ['arr', 'revenue', 'money', 'impact', 'value', 'savings'],
-        answer: "My initiatives contributed to over $450,000 in ARR through enterprise wins. Additionally, I realized annual savings of approx ₹35,00,000 by leading the migration to an in-house HRMS."
+        keywords: ['skills', 'expertise', 'competencies'],
+        answer: "My core skills include AI Product Strategy, End-to-End Product Lifecycle Management, Requirements Gathering, Agile/Scrum, Stakeholder Leadership, and RFP Execution. I bridge the gap between business strategy and technical implementation."
     },
     {
-        keywords: ['experience', 'background', 'career', 'work'],
-        answer: "I have 7+ years of experience, specializing in AI-driven HR-Tech and SaaS. Currently, I serve as VP of Business Operations (Product) at ExamRoom.AI, following a strong foundation in HR at TaskUs.",
+        keywords: ['tools', 'technologies', 'stack', 'software'],
+        answer: "I use a robust stack: Jira, Confluence, Trello for management; Figma, Miro, Lovable for design; Power BI, Google Analytics, Frappe Insights for analytics; and 'Vibe Coding' tools like Antigravity and Kiro. I'm also familiar with SQL, APIs, and HTML/CSS."
     },
     {
-        keywords: ['tech', 'stack', 'skills', 'tools', 'jira', 'rovo'],
-        answer: "My technical toolkit includes product lifecycle management, Jira Rovo AI, SQL, APIs, and 'Vibe Coding' tools like Antigravity and Lovable. I bridge the gap between technical complexity and user value."
+        keywords: ['rag', 'superset', 'sql', 'retrieval'],
+        answer: "I built an SQL RAG layer for Apache Superset to democratize data access, allowing non-technical users to query data via natural language. This significantly improved data accessibility and reduced dependency on technical teams."
     },
     {
-        keywords: ['contact', 'email', 'hire', 'recruiter', 'linkedin'],
-        answer: "I'd love to discuss how I can drive value for your team. Please reach out via email at ranaajaysingh@outlook.com or connect with me on LinkedIn."
+        keywords: ['qa', 'agent', 'testing', 'automation'],
+        answer: "I led the design of an AI-powered QA Agent that automates browser flow testing. This proactive approach reduced average QA effort by 50% and removed bottlenecks in our release cycles."
+    },
+    {
+        keywords: ['rfp', 'proposal', 'sales', 'growth'],
+        answer: "I launched an AI-driven RFP Automation Agent that analyzes requirements and auto-populates responses, reducing turnaround time by over 80%. I've also partnered with Sales on 12+ RFPs contributing to over $450,000 in ARR."
+    },
+    {
+        keywords: ['education', 'degree', 'college', 'university', 'iit', 'mba'],
+        answer: "I hold a Tech Product Management certification from IIT Delhi (2025-2026), an MBA in HR & Marketing from Renaissance University (2020-2022), and a B.COM from Devi Ahilya Vishwa Vidyalaya (2015-2018)."
+    },
+    {
+        keywords: ['certifications', 'certs', 'courses'],
+        answer: "My certifications include: Product Manager (Udemy), SHRM-CP, HR Analytics & Management (Udemy), and Advanced Excel Formulas (Skill Nation)."
+    },
+    {
+        keywords: ['contact', 'email', 'phone', 'reach', 'linkedin', 'location'],
+        answer: "You can reach me at ranaajaysingh@outlook.com or +919977799434. I am based in Bangalore, KA, India. Feel free to connect with me on LinkedIn!"
     },
     {
         keywords: ['hello', 'hi', 'hey', 'greetings'],
-        answer: "Hello! I am the Ajay AI Career Assistant. I can discuss my work on SQL RAG layers, AI QA Agents, or my business impact. How can I help you today?"
+        answer: "Hello! I am the Ajay AI Career Assistant. I can discuss my experience at ExamRoom.AI and TaskUs, my skills in AI Product Strategy, or my specific projects like the SQL RAG Layer and RFP Automation Agent. How can I help you?"
     }
 ];
 
