@@ -24,7 +24,7 @@ export default function Hero() {
                     className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary shadow-sm hover:bg-primary/20 transition-colors"
                 >
                     <Sparkles className="h-4 w-4" />
-                    <span>Open to Industry Leadership Roles</span>
+                    <span>Open to Product Management Roles</span>
                 </motion.div>
 
                 {/* Main Heading */}
