@@ -30,6 +30,12 @@ const experiences = [
         period: 'Nov 2019 - Jun 2021',
         description: 'Translated business needs into system workflows (Workday/HRMS) and facilitated global tech adoption.',
         active: false,
+        details: [
+            'Gathered and documented HR process requirements across onboarding, internal transfers, exits, performance management, and corrective action, translating business needs into clear system workflows.',
+            'Partnered with cross-functional stakeholders to align HR policies and operational processes with configurable Workday/HRMS features, ensuring accurate system representation of HR procedures.',
+            'Facilitated UAT cycles and conducted user training sessions, ensuring teams understood new functionalities and driving smooth adoption of HR technology across global operations.',
+            'Supported post–go-live enhancements, contributing to the rollout of additional modules including Performance Management, Resignation Management, and Corrective Action Management to strengthen overall process coverage.'
+        ]
     },
 ];
 
