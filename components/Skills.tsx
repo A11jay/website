@@ -82,7 +82,7 @@ function CpuIcon(props: any) {
 
 export default function Skills() {
     return (
-        <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-background/50">
+        <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div className="text-center mb-16 space-y-4">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">Skills & Tech Stack</h2>
                 <p className="text-muted-foreground text-lg max-w-2xl mx-auto">

@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <section className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden px-4 text-center bg-background">
+        <section className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden px-4 text-center ">
             {/* Ambient Background Effect */}
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_500px_at_50%_200px,#3b82f633,transparent)]" />
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background to-background blur-3xl opacity-40" />
