@@ -5,7 +5,7 @@ import { Briefcase } from 'lucide-react';
 
 const experiences = [
     {
-        role: 'VP - Business Operations (Product)',
+        role: 'Product Manager',
         company: 'ExamRoom.AI',
         location: 'Bangalore, KA',
         period: 'Jun 2021 - Present',
@@ -21,7 +21,7 @@ const experiences = [
             'Conducted market research to identify whitespace opportunities in HR-Tech and EdTech.',
             'Delivered major releases: Lockdown Browser, OMR Scan & Score, Credentialing, Learning Paths.',
             'Partnered with Sales on 12+ RFPs and 20+ enterprise demos, contributing to $450k+ ARR.',
-            'Supported enterprise migration from Zoho People Plus to in-house HRMS, saving ₹35L+ annually.'
+            'Led enterprise migration from Zoho People Plus to in-house HRMS, saving ₹35L+ annually.'
         ],
         active: true,
     },
