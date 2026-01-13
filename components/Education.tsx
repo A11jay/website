@@ -25,10 +25,7 @@ const education = [
 ];
 
 const certifications = [
-    'Product Manager (Udemy)',
-    'SHRM - Certified Professional',
-    'HR Analytics & Management',
-    'Advanced Excel Formulas',
+    'Product Manager (Udemy)'
 ];
 
 export default function Education() {
