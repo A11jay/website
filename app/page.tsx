@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
-import ImpactGallery from "@/components/ImpactGallery";
+import ProductsImpact from "@/components/ProductsImpact";
+import AIImpact from "@/components/AIImpact";
 import Timeline from "@/components/Timeline";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
@@ -10,8 +11,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between overflow-x-hidden">
       <Hero />
+      <ProductsImpact />
       <Timeline />
-      <ImpactGallery />
+      <AIImpact />
       <Skills />
       <Education />
       <Contact />

@@ -48,23 +48,14 @@ const projects = [
         icon: Sparkles,
         color: 'from-yellow-500 to-amber-500',
         featured: false
-    },
-    {
-        title: 'Enterprise HRMS Migration',
-        description: 'Led the strategic migration from Zoho People Plus to an in-house HRMS, defining scope, integrations, and rollout execution for global operations.',
-        tags: ['Digital Transformation', 'HR-Tech', 'Migration'],
-        metric: 'Saved ₹35L+ Annually',
-        icon: TrendingUp,
-        color: 'from-indigo-500 to-violet-500',
-        featured: false
-    },
+    }
 ];
 
-export default function ImpactGallery() {
+export default function AIImpact() {
     return (
-        <section id="impact" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <section id="ai-impact" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div className="text-center mb-16 space-y-4">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">AI Impact Gallery</h2>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">AI Impact</h2>
                 <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                     Transforming products and operations through AI-driven innovation.
                 </p>
